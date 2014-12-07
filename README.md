@@ -5,9 +5,9 @@ The blog is not so heavily edited as datalook.io, neverthless in case there is s
 
 Following this the blog is divided in 2 repositories. Both needs to be clone to run the application on localhost. Below I guide you how to archive this.
 
-##Developer Setup up
+##Developer Setup
 
-I assume you have already install a LAMP stack in your local machine. otherwise more info here (I offer you one guide but you can google to find more help): https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu 
+I assume you have already installed a LAMP stack in your local machine. otherwise more info here (I offer you one guide but you can google to find more help): https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu 
 
 First fork your own copy of https://github.com/opendataforgood/WordPress This forked is regular basis updated with wordpress upstream.
 
