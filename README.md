@@ -50,6 +50,9 @@ mkdir uploads
 this command creates a symlink on your Wordpress working copy to the custom datebook files that you already has checked out. So, Wordpress folder contains already all the files for running Wordpress.
 Well, not still. If you want to run it in your computer we have to do the following steps Config wordpress settings (TODO)
 
+##Updating your fork repo:
+
+follow this useful guide: http://www.hpique.com/2013/09/updating-a-fork-directly-from-github/
 
 
 
