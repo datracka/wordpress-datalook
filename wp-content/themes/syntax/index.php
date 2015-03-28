@@ -15,11 +15,6 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
-				<?php if ( is_active_sidebar( 'sidebar-3' ) ) : ?>
-    			<div class="sidebar-3">
-    				<?php dynamic_sidebar( 'sidebar-3' ); ?>
-    			</div>
-    		<?php endif; ?>
 
 		<?php if ( have_posts() ) : ?>
 

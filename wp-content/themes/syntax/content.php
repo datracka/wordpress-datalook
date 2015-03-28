@@ -7,7 +7,12 @@ $format = get_post_format();
 $formats = get_theme_support( 'post-formats' );
 $hasthumb = 'no-thumbnail';
 ?>
-
+<?php if ( '' != get_the_post_thumbnail() ) : ?>
+	<?php $hasthumb = 'has-thumbnail'; ?>
+	<figure class="entry-thumbnail">
+		<?php the_post_thumbnail(); ?>
+	</figure>
+<?php endif; ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class( $hasthumb ); ?>>
 	<header class="entry-header">
 		<?php if ( $format && in_array( $format, $formats[0] ) ): ?>

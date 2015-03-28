@@ -1,0 +1,299 @@
+/*
+ Theme Name: syntax-child
+ Theme URI:
+ Description: syntax child theme
+ Author: Vicens Fayos
+ Author URI: http://vicensfayos.com
+ Template: syntax
+ Version: 0.1.0
+ License: GNU General Public License v2 or later
+ License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  syntax-child
+*/
+@import url("../syntax/style.css");
+
+/** css from styles overwritten */
+
+body,
+button,
+input,
+select,
+textarea {
+  color: #404040;
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+pre {
+  background: rgba(119, 119, 119, 0.5);
+  font-family: "futura-pt",sans-serif;
+
+  font-size: 0.9375em;
+  line-height: 1.6em;
+  margin-top: -2px;
+  margin-bottom: 24px;
+  max-width: 100%;
+  overflow: auto;
+  padding: 24px;
+}
+
+.site-logo-link-dl {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+code, kbd, tt, var {
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71429em;
+}
+
+.site-header {
+  background-color: white;
+}
+
+.site-header-wrapper {
+  margin: 0 auto;
+  max-width: 1008px;
+  margin-bottom:10px;
+}
+
+.site-logo-link {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.site-main {
+  margin: 0px 0 0;
+  margin-bottom: 0px;
+  padding: 0;
+  position: relative;
+}
+
+.content-area {
+  margin: 0 auto;
+  max-width: 829.00001px;
+  padding: 36px 36px 0;
+  padding-top: 0px;
+}
+
+.menu {
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 320px) {
+  .site-title {
+    display:none;
+  }
+}
+
+.entry-content,
+.entry-summary {
+  margin-bottom: 29.7px;
+  margin-top: 29.7px;
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.entry-title {
+  font-size: 2.61111em;
+  line-height: 1.26383em;
+  text-align: center;
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 500;
+
+}
+
+.entry-date {
+font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.comments-link,
+.post-date,
+.sticky .post-date,
+.tags-links,
+.byline,
+.hentry .edit-link {
+  margin-right: 44.55px;
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.widget-area .sidebar-3 {
+  float: left;
+  margin: 0 5% 59.4px 0;
+  padding-bottom: 40px;
+  width: 30%;
+}
+
+@media screen and (max-width: 800px) {
+  .social-links {
+    float: none;
+    margin: 0 auto 29.7px;
+    text-align: center;
+    position: absolute;
+    right: 0px;
+  }
+}
+
+.twitter-link {
+  display:none;
+}
+
+.twitter-script {
+  display: inline-block;
+}
+
+.newsletter-link:before {
+  content: '\f463';
+}
+
+.tueblr-link:before {
+  content: "\f214";
+}
+
+.twitter-link {
+  display: inline-block;
+}
+
+.twitter-follow-button {
+  margin-top:2px;
+  margin-right: 2px;
+}
+
+.hentry:after {
+  background-image: url("images/divider.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: auto 23px;
+  clear: both;
+  content: "";
+  display: block;
+  margin: 59.4px 0;
+  width: 100%;
+  height: 29.7px;
+}
+
+/* Links */
+a {
+  color: black;
+}
+a:visited {
+  color: black;
+  text-decoration: underline;
+}
+a:visited {
+  color: black;
+}
+a:hover, a:focus, a:active {
+  color: black;
+}
+
+/** end overwritten existing css */
+
+.site-title-dl {
+  display: inline;
+  font-size: 22px;
+  font-weight: 700;
+  color: black;
+  vertical-align: middle;
+  margin-left: -21px;
+}
+
+.logo-dl {
+  vertical-align: bottom
+}
+
+.newsletter-dl {
+  background-color: #f2f2f2; padding: 10px; padding-top:20px; border-radius: 0px; margin-top:10px;
+  padding-bottom:1% !important;
+}
+
+
+  @media (max-width: 992px) {
+    .email-button-dl, .email-button {
+        margin-top: 10px !important;
+    }
+  }
+
+
+/** fonts */
+
+
+.futura-pt-light {
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.futura-pt-light-italic {
+  font-family: "futura-pt",sans-serif;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.futura-pt-book {
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.futura-pt-book-italic {
+  font-family: "futura-pt",sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.futura-pt-medium {
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.futura-pt-medium-italic {
+  font-family: "futura-pt",sans-serif;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.futura-pt-heavy {
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.futura-pt-heavy-italic {
+  font-family: "futura-pt",sans-serif;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.futura-extra-bold {
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.futura-extra-bold-italic {
+  font-family: "futura-pt",sans-serif;
+  font-style: italic;
+  font-weight: 800;
+}
+
+
+
+
+
+
+
+

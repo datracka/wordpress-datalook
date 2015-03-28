@@ -204,26 +204,3 @@ require get_template_directory() . '/inc/customizer.php';
  */
 if ( file_exists( get_template_directory() . '/inc/jetpack.php' ) )
 	require get_template_directory() . '/inc/jetpack.php';
-
-/**
- * Add functionality to upload SVG files in WordPress
- */
-function svg_upload ($svg_mime) {
-$svg_mime['svg'] = 'image/svg+xml';
-return $svg_mime;
-}
-add_filter( 'upload_mimes', 'svg_upload' );
-// Add a shortcode to implement them with a fallback solution in any frontend editor
-function generate_svg_code($atts) {
-$svga = shortcode_atts( array(
-'width' => '0px',
-'height' => '0px',
-'svg_path' => '',
-'alt_path' => '',
-'alt' => '',
-'style' => '',
-'styleimg' => '',
-), $atts ); 
-return '[raw]<svg style="'.$svga['style'].'" width="'.$svga['width'].'" height="'.$svga['height'].'"><image style="'.$svga['styleimg'].'" xlink:href="'.$svga['svg_path'].'" src="'.$svga['alt_path'].'" width="'.$svga['width'].'" height="'.$svga['height'].'" alt="'.$svga['alt'].'" /></svg>[/raw]';
-}
-add_shortcode('do-svg', 'generate_svg_code');

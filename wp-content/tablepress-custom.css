@@ -1,9 +1,5 @@
 .tablepress td,
 .tablepress th {
-  text-align: center;
-  vertical-align: bottom;
-}
-
-.tablepress-id-2 .column-F {
-	width: 200px;
+	text-align: center;
+	vertical-align: middle;
 }

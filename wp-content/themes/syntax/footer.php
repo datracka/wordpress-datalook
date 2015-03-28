@@ -1,4 +1,4 @@
-Theme: Syntax by Automattic.<?php
+<?php
 /**
  * The template for displaying the footer.
  *
@@ -16,25 +16,15 @@ Theme: Syntax by Automattic.<?php
 			</div>
 		<?php endif; ?>
 		<div class="site-info">
-			</div><!-- .site-info -->
+			<?php do_action( 'syntax_credits' ); ?>
+			<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'syntax' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'syntax' ), 'WordPress' ); ?></a>
+			<span class="sep"> ~ </span>
+			<?php printf( __( 'Theme: %1$s by %2$s.', 'syntax' ), 'Syntax', '<a href="http://wordpress.com/" rel="designer">Automattic</a>' ); ?>
+		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-<!-- Piwik -->
-<script type="text/javascript">
-  var _paq = _paq || [];
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//piwik.vicensfayos.com/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', 2]);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="//piwik.vicensfayos.com/piwik.php?idsite=2" style="border:0;" alt="" /></p></noscript>
-<!-- End Piwik Code -->
+
 </body>
 </html>

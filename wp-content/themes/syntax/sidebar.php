@@ -14,7 +14,12 @@
 		<?php endif; ?>
 		<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
 			<div class="sidebar-2">
-				<?php dynamic_sidebar( 'sidebar-2' ); ?>qweqweeee
+				<?php dynamic_sidebar( 'sidebar-2' ); ?>
+			</div>
+		<?php endif; ?>
+		<?php if ( is_active_sidebar( 'sidebar-3' ) ) : ?>
+			<div class="sidebar-3">
+				<?php dynamic_sidebar( 'sidebar-3' ); ?>
 			</div>
 		<?php endif; ?>
 	</div><!-- #secondary -->

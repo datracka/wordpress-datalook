@@ -6,7 +6,7 @@
  * we need for twitter cards.
  *
  * @see /wp-content/blog-plugins/open-graph.php
- * @see https://dev.twitter.com/docs/cards
+ * @see https://dev.twitter.com/cards/overview
  */
 class Jetpack_Twitter_Cards {
 
@@ -123,6 +123,7 @@ class Jetpack_Twitter_Cards {
 		$img_count = $extract['count']['image'];
 
 		if ( empty( $img_count ) ) {
+
 			// No images, use Blavatar as a thumbnail for the summary type.
 			if ( function_exists('blavatar_domain') ) {
 				$blavatar_domain = blavatar_domain( site_url() );
@@ -130,7 +131,19 @@ class Jetpack_Twitter_Cards {
 					$og_tags['twitter:image'] = blavatar_url( $blavatar_domain, 'img', 240 );
 				}
 			}
+
+			// Second fall back, Site Logo
+			if ( empty( $og_tags['twitter:image'] ) && ( function_exists( 'jetpack_has_site_logo' ) && jetpack_has_site_logo() ) ) {
+				$og_tags['twitter:image'] = jetpack_get_site_logo( 'url' );
+			}
+
+			// Third fall back, Site Icon
+			if ( empty( $og_tags['twitter:image'] ) && ( function_exists( 'jetpack_has_site_icon' ) && jetpack_has_site_icon() ) ) {
+				$og_tags['twitter:image'] = jetpack_site_icon_url( null, '240' );
+			}
+
 			// Not falling back on Gravatar, because there's no way to know if we end up with an auto-generated one.
+
 		} elseif ( 1 == $img_count && ( 'image' == $extract['type'] || 'gallery' == $extract['type'] ) ) {
 			// 1 image = photo
 			// Test for $extract['type'] to limit to image and gallery, so we don't send a potential fallback image like a Gravatar as a photo post.
@@ -151,7 +164,7 @@ class Jetpack_Twitter_Cards {
 	static function twitter_cards_gallery( $extract, $og_tags ) {
 		foreach( $extract['images'] as $key => $value ) {
 			if ( $key > 3 ) {
-				break; // Can only send a max of 4 picts (https://dev.twitter.com/docs/cards/types/gallery-card)
+				break; // only the first 4 appear in card template (https://dev.twitter.com/cards/types/gallery)
 			}
 			$og_tags[ 'twitter:image' . $key ] = add_query_arg( 'w', 640, $value['url'] );
 		}
@@ -214,4 +227,3 @@ class Jetpack_Twitter_Cards {
 }
 
 Jetpack_Twitter_Cards::init();
-
