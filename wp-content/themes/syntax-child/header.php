@@ -99,7 +99,7 @@ $path     = get_theme_mod( 'jetpack-path' );
 
 <div id="mc_embed_signup">
 	<div class="content-area">
-		<form action="//dataforgood.us8.list-manage.com/subscribe/post?u=eafab9a0bb1bde69073468637&amp;id=9d821967b1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+		<form action="//datalook.us9.list-manage.com/subscribe/post?u=4aa126af9096681d9931557cf&amp;id=dabaf9c94f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     		<div id="mc_embed_signup_scroll">
 				<div class="newsletter-dl mc-field-group" style="">
 	  				<div class="row">
@@ -119,7 +119,7 @@ $path     = get_theme_mod( 'jetpack-path' );
 					<div class="response" id="mce-success-response" style="display:none">Thanks for subscribing!</div>
 				</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 	    		<div style="position: absolute; left: -5000px;">
-	    			<input type="text" name="b_eafab9a0bb1bde69073468637_9d821967b1" tabindex="-1" value="">
+	    			<input type="text" name="b_4aa126af9096681d9931557cf_dabaf9c94f" tabindex="-1" value="">
 	    		</div>
 	    	</div>
 		</form>
