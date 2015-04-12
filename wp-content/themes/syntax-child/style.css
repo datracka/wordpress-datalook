@@ -187,6 +187,7 @@ font-family: "futura-pt",sans-serif;
 /* Links */
 a {
   color: black;
+  text-decoration: underline;
 }
 a:visited {
   color: black;
@@ -197,6 +198,13 @@ a:visited {
 }
 a:hover, a:focus, a:active {
   color: black;
+}
+
+/* Alignment */
+.alignleft {
+  display: inline;
+  float: left;
+  /*margin: 14.85px 29.7px 14.85px 0;*/
 }
 
 /** end overwritten existing css */
@@ -226,6 +234,57 @@ a:hover, a:focus, a:active {
     }
   }
 
+
+/** animations **/
+
+/*
+  definition area for keyframes animation
+ */
+
+@-webkit-keyframes opacity{
+  0% {
+    display:none;
+    opacity: 0;
+  }
+  100% {
+    display: block ;
+    opacity: 1;
+  }
+
+}
+@-moz-keyframes opacity {
+  0% {
+    display:none;
+    opacity: 0;
+  }
+  100% {
+    display: block ;
+    opacity: 1;
+  }
+
+}
+@-ms-keyframes opacity {
+  0% {
+    display:none;
+    opacity: 0;
+  }
+  100% {
+    display: block ;
+    opacity: 1;
+  }
+
+}
+@keyframes opacity {
+  0% {
+    display:none;
+    opacity: 0;
+  }
+  100% {
+    display: block ;
+    opacity: 1;
+  }
+
+}
 
 /** fonts */
 
@@ -289,6 +348,179 @@ a:hover, a:focus, a:active {
   font-style: italic;
   font-weight: 800;
 }
+
+/***************** header */
+
+.header {
+  background: #fff;
+  margin-bottom: 10px;
+  color: #3c3c3c;
+  font-family: "proxima-nova", "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: relative;
+  height: 98px;
+  padding: 0 20px;
+  z-index: 100;
+
+  zoom: 1;
+}
+
+.header:before, .header:after {
+  content: "";
+  display: table;
+}
+
+.header:after {
+  clear: both;
+}
+
+.header .nav-module {
+  width: 31.25%;
+  float: left;
+  margin-right: 3.125%;
+}
+
+.header .nav-module:last-child {
+  float: right;
+  margin-right: 0;
+}
+
+.header-menu {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: right;
+}
+
+@media screen and (min-width: 70em) {
+  /* line 8, ../scss/modules/_header.scss */
+  .header {
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+
+@media screen and (min-width: 40em) and (max-width: 50em) {
+  /* line 8, ../scss/modules/_header.scss */
+  .header {
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+
+@media screen and (max-width: 40em) {
+
+  .header {
+    padding: 0 10px;
+    height: 50px;
+    position: relative;
+  }
+
+  .header .nav-module {
+    width: 100%;
+  }
+
+  .header-logo {
+    height: 120px;
+  }
+
+  .header .header-menu {
+    display:none;
+  }
+}
+
+
+
+
+
+
+/****** image *** /
+
+/* line 95, ../scss/modules/_header.scss */
+.header .logo {
+  display: block;
+  color: #3c3c3c;
+  line-height: 1;
+}
+/* line 100, ../scss/modules/_header.scss */
+.header .logo a, .header .logo a:visited {
+  color: #3c3c3c;
+}
+@media screen and (max-width: 40em) {
+  /* line 106, ../scss/modules/_header.scss */
+  .header .logo a {
+    font-size: 2em;
+    height: 50px;
+    line-height: 50px;
+    z-index: 10;
+  }
+}
+@media screen and (min-width: 40em) {
+  /* line 95, ../scss/modules/_header.scss */
+  .header .logo {
+    font-size: 2em;
+  }
+}
+/* line 119, ../scss/modules/_header.scss */
+.header .logo-image {
+  line-height: 1;
+  margin-bottom: 0;
+}
+/* line 123, ../scss/modules/_header.scss */
+.header .logo-image a {
+  background: no-repeat center center;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
+/* line 130, ../scss/modules/_header.scss */
+.header .logo-image img {
+  display: block;
+  max-width: 200px;
+  margin-bottom: -10px;
+}
+@media screen and (max-width: 40em) {
+  /* line 130, ../scss/modules/_header.scss */
+  .header .logo-image img {
+    max-width: 230px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 40em) {
+  /* line 130, ../scss/modules/_header.scss */
+  .header .logo-image img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+  }
+}
+
+.mc_embed_signup {
+  -webkit-animation: opacity 0.5s linear;
+  -moz-animation: opacity 0.5s linear;
+  -ms-animation: opacity 0.5s linear;
+  -o-animation: opacity 0.5s linear;
+  animation: opacity 0.5s linear;
+}
+
+
+
+
 
 
 
