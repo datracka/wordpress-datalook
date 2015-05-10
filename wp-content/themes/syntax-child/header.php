@@ -47,7 +47,7 @@ $path     = get_theme_mod( 'jetpack-path' );
 		  <div class="nav-module">
 			</div>
 		  <div class="nav-module header-menu">
-				<strong>Blog</strong> | <a href="http://datalook.io" target="_blank">Home</a>
+				<strong>Blog</strong> | <a href="http://datalook.io" target="_blank" style="text-decoration: none;">Home</a>
 			</div>
 	</header><!-- #masthead -->
 	<!-- Begin MailChimp Signup Form -->
