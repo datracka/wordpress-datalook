@@ -19,7 +19,7 @@ $path     = get_theme_mod( 'jetpack-path' );
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
-<title>Data for Good | Blog <?php //wp_title( '|', true, 'right' ); ?></title>
+<title>DataLook | Blog <?php //wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
