@@ -359,7 +359,7 @@ a:hover, a:focus, a:active {
   position: relative;
   height: 98px;
   padding: 0 20px;
-  z-index: 100;
+  z-index: 98;
 
   zoom: 1;
 }
