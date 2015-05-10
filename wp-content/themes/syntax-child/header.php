@@ -52,8 +52,10 @@ $path     = get_theme_mod( 'jetpack-path' );
 			</div>
 	</header><!-- #masthead -->
 	<!-- Begin MailChimp Signup Form -->
-	<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+  <?php
+  /* #### commented #####
 
+	<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
 	<div id="mc_embed_signup" class="mc_embed_signup">
 		<div class="content-area">
 			<form action="//datalook.us9.list-manage.com/subscribe/post?u=4aa126af9096681d9931557cf&amp;id=dabaf9c94f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -83,6 +85,8 @@ $path     = get_theme_mod( 'jetpack-path' );
 		</div>
 		<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 	</div>
+  */
+  ?>
 	<!--End mc_embed_signup-->
 	<div id="main" class="site-main">
 		<h1 id="toggle-nav" class="menu-toggle"><span class="screen-reader-text"><?php _e( 'Menu', 'syntax' ); ?></span></h1>
