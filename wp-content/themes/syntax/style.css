@@ -534,13 +534,15 @@ textarea {
 
 img.alignleft,
 .wp-caption.alignleft {
-  margin-left: 0px;
+    margin-left: -125.49999px;
+
 }
 @media screen and (max-width: 1020px) {
-  img.alignleft,
-  .wp-caption.alignleft {
-    margin-left: 0px;
-  }
+    img.alignleft,
+    .wp-caption.alignleft {
+        margin-left: 0;
+
+    }
 }
 
 .alignright, blockquote.alignright {
