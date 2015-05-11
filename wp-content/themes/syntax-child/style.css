@@ -20,15 +20,15 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: "futura-pt",sans-serif;
+  font-family: "futura-pt", sans-serif;
   font-style: normal;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
 }
 
 pre {
   background: rgba(119, 119, 119, 0.5);
-  font-family: "futura-pt",sans-serif;
+  font-family: "futura-pt", sans-serif;
 
   font-size: 0.9375em;
   line-height: 1.6em;
@@ -36,7 +36,9 @@ pre {
   margin-bottom: 24px;
   max-width: 100%;
   overflow: auto;
+  white-space: pre-line;
   padding: 24px;
+  word-break: normal;
 }
 
 .site-logo-link-dl {
@@ -45,7 +47,7 @@ pre {
 }
 
 code, kbd, tt, var {
-  font-family: "futura-pt",sans-serif;
+  font-family: "futura-pt", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.71429em;
@@ -58,7 +60,7 @@ code, kbd, tt, var {
 .site-header-wrapper {
   margin: 0 auto;
   max-width: 1008px;
-  margin-bottom:10px;
+  margin-bottom: 10px;
 }
 
 .site-logo-link {
@@ -81,14 +83,14 @@ code, kbd, tt, var {
 }
 
 .menu {
-  font-family: "futura-pt",sans-serif;
+  font-family: "futura-pt", sans-serif;
   font-style: normal;
   font-weight: 400;
 }
 
 @media screen and (max-width: 320px) {
   .site-title {
-    display:none;
+    display: none;
   }
 }
 
@@ -96,7 +98,7 @@ code, kbd, tt, var {
 .entry-summary {
   margin-bottom: 29.7px;
   margin-top: 29.7px;
-  font-family: "futura-pt",sans-serif;
+  font-family: "futura-pt", sans-serif;
   font-style: normal;
   font-weight: 400;
 }
@@ -105,14 +107,14 @@ code, kbd, tt, var {
   font-size: 2.61111em;
   line-height: 1.26383em;
   text-align: center;
-  font-family: "futura-pt",sans-serif;
+  font-family: "futura-pt", sans-serif;
   font-style: normal;
   font-weight: 500;
 
 }
 
 .entry-date {
-font-family: "futura-pt",sans-serif;
+  font-family: "futura-pt", sans-serif;
   font-style: normal;
   font-weight: 300;
 }
@@ -124,7 +126,7 @@ font-family: "futura-pt",sans-serif;
 .byline,
 .hentry .edit-link {
   margin-right: 44.55px;
-  font-family: "futura-pt",sans-serif;
+  font-family: "futura-pt", sans-serif;
   font-style: normal;
   font-weight: 300;
 }
@@ -147,7 +149,7 @@ font-family: "futura-pt",sans-serif;
 }
 
 .twitter-link {
-  display:none;
+  display: none;
 }
 
 .twitter-script {
@@ -167,7 +169,7 @@ font-family: "futura-pt",sans-serif;
 }
 
 .twitter-follow-button {
-  margin-top:2px;
+  margin-top: 2px;
   margin-right: 2px;
 }
 
@@ -189,13 +191,16 @@ a {
   color: black;
   text-decoration: underline;
 }
+
 a:visited {
   color: black;
   text-decoration: underline;
 }
+
 a:visited {
   color: black;
 }
+
 a:hover, a:focus, a:active {
   color: black;
 }
@@ -223,17 +228,19 @@ a:hover, a:focus, a:active {
 }
 
 .newsletter-dl {
-  background-color: #f2f2f2; padding: 10px; padding-top:20px; border-radius: 0px; margin-top:10px;
-  padding-bottom:1% !important;
+  background-color: #f2f2f2;
+  padding: 10px;
+  padding-top: 20px;
+  border-radius: 0px;
+  margin-top: 10px;
+  padding-bottom: 1% !important;
 }
 
-
-  @media (max-width: 992px) {
-    .email-button-dl, .email-button {
-        margin-top: 10px !important;
-    }
+@media (max-width: 992px) {
+  .email-button-dl, .email-button {
+    margin-top: 10px !important;
   }
-
+}
 
 /** animations **/
 
@@ -241,46 +248,49 @@ a:hover, a:focus, a:active {
   definition area for keyframes animation
  */
 
-@-webkit-keyframes opacity{
+@-webkit-keyframes opacity {
   0% {
-    display:none;
+    display: none;
     opacity: 0;
   }
   100% {
-    display: block ;
+    display: block;
     opacity: 1;
   }
 
 }
+
 @-moz-keyframes opacity {
   0% {
-    display:none;
+    display: none;
     opacity: 0;
   }
   100% {
-    display: block ;
+    display: block;
     opacity: 1;
   }
 
 }
+
 @-ms-keyframes opacity {
   0% {
-    display:none;
+    display: none;
     opacity: 0;
   }
   100% {
-    display: block ;
+    display: block;
     opacity: 1;
   }
 
 }
+
 @keyframes opacity {
   0% {
-    display:none;
+    display: none;
     opacity: 0;
   }
   100% {
-    display: block ;
+    display: block;
     opacity: 1;
   }
 
@@ -288,63 +298,62 @@ a:hover, a:focus, a:active {
 
 /** fonts */
 
-
 .futura-pt-light {
-  font-family: "futura-pt",sans-serif;
+  font-family: "futura-pt", sans-serif;
   font-style: normal;
   font-weight: 300;
 }
 
 .futura-pt-light-italic {
-  font-family: "futura-pt",sans-serif;
+  font-family: "futura-pt", sans-serif;
   font-style: italic;
   font-weight: 300;
 }
 
 .futura-pt-book {
-  font-family: "futura-pt",sans-serif;
+  font-family: "futura-pt", sans-serif;
   font-style: normal;
   font-weight: 400;
 }
 
 .futura-pt-book-italic {
-  font-family: "futura-pt",sans-serif;
+  font-family: "futura-pt", sans-serif;
   font-style: italic;
   font-weight: 400;
 }
 
 .futura-pt-medium {
-  font-family: "futura-pt",sans-serif;
+  font-family: "futura-pt", sans-serif;
   font-style: normal;
   font-weight: 500;
 }
 
 .futura-pt-medium-italic {
-  font-family: "futura-pt",sans-serif;
+  font-family: "futura-pt", sans-serif;
   font-style: italic;
   font-weight: 500;
 }
 
 .futura-pt-heavy {
-  font-family: "futura-pt",sans-serif;
+  font-family: "futura-pt", sans-serif;
   font-style: normal;
   font-weight: 700;
 }
 
 .futura-pt-heavy-italic {
-  font-family: "futura-pt",sans-serif;
+  font-family: "futura-pt", sans-serif;
   font-style: italic;
   font-weight: 700;
 }
 
 .futura-extra-bold {
-  font-family: "futura-pt",sans-serif;
+  font-family: "futura-pt", sans-serif;
   font-style: normal;
   font-weight: 800;
 }
 
 .futura-extra-bold-italic {
-  font-family: "futura-pt",sans-serif;
+  font-family: "futura-pt", sans-serif;
   font-style: italic;
   font-weight: 800;
 }
@@ -440,14 +449,9 @@ a:hover, a:focus, a:active {
   }
 
   .header .header-menu {
-    display:none;
+    display: none;
   }
 }
-
-
-
-
-
 
 /****** image *** /
 
@@ -457,10 +461,12 @@ a:hover, a:focus, a:active {
   color: #3c3c3c;
   line-height: 1;
 }
+
 /* line 100, ../scss/modules/_header.scss */
 .header .logo a, .header .logo a:visited {
   color: #3c3c3c;
 }
+
 @media screen and (max-width: 40em) {
   /* line 106, ../scss/modules/_header.scss */
   .header .logo a {
@@ -470,17 +476,20 @@ a:hover, a:focus, a:active {
     z-index: 10;
   }
 }
+
 @media screen and (min-width: 40em) {
   /* line 95, ../scss/modules/_header.scss */
   .header .logo {
     font-size: 2em;
   }
 }
+
 /* line 119, ../scss/modules/_header.scss */
 .header .logo-image {
   line-height: 1;
   margin-bottom: 0;
 }
+
 /* line 123, ../scss/modules/_header.scss */
 .header .logo-image a {
   background: no-repeat center center;
@@ -488,12 +497,14 @@ a:hover, a:focus, a:active {
   text-shadow: none;
   color: transparent;
 }
+
 /* line 130, ../scss/modules/_header.scss */
 .header .logo-image img {
   display: block;
   max-width: 200px;
   margin-bottom: -10px;
 }
+
 @media screen and (max-width: 40em) {
   /* line 130, ../scss/modules/_header.scss */
   .header .logo-image img {
@@ -501,6 +512,7 @@ a:hover, a:focus, a:active {
     margin-bottom: 0;
   }
 }
+
 @media screen and (max-width: 40em) {
   /* line 130, ../scss/modules/_header.scss */
   .header .logo-image img {
@@ -520,15 +532,15 @@ a:hover, a:focus, a:active {
 
 img.alignleft,
 .wp-caption.alignleft {
-    margin-left: 0px;
+  margin-left: 0px;
 
 }
 
 @media screen and (max-width: 1020px) {
-    img.alignleft,
-    .wp-caption.alignleft {
-        margin-left: 0px;
-    }
+  img.alignleft,
+  .wp-caption.alignleft {
+    margin-left: 0px;
+  }
 }
 
 
